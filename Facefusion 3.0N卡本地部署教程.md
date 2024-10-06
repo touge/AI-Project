@@ -71,6 +71,9 @@ conda install -y conda-forge::cuda-runtime=12.4.1 conda-forge::cudnn=9.2.1.18
 #(可选)4070以上算力显卡可安装tensorrt
 pip install tensorrt==10.4.0 --extra-index-url https://pypi.nvidia.com
 
+#安装项目依赖
+pip install -r requirements.txt
+
 #安装其他库、配置到系统环境变量
 conda install -y -c conda-forge ffmpeg
 python install.py --onnxruntime cuda
